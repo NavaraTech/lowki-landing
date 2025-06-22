@@ -1,6 +1,7 @@
 export const metadata = {
-  title: "Home - Open PRO",
-  description: "Page description",
+  title: "Lowki - Real Connections for Real Students",
+  description:
+    "Combat digital isolation with authentic video conversations. Connect with fellow students anonymously, share experiences, and build meaningful relationships within your campus community.",
 };
 
 import PageIllustration from "@/components/page-illustration";
@@ -15,10 +16,18 @@ export default function Home() {
     <>
       <PageIllustration />
       <Hero />
-      <Workflows />
-      <Features />
-      <Testimonials />
-      <Cta />
+      <div id="how-it-works">
+        <Workflows />
+      </div>
+      <div id="features">
+        <Features />
+      </div>
+      <div id="testimonials">
+        <Testimonials />
+      </div>
+      <div id="cta">
+        <Cta />
+      </div>
     </>
   );
 }
